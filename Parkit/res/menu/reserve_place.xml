@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andmore.parkitmobile.activity.ReservePlaceActivity" >
+
+    <item
+        android:id="@+id/logout"
+         android:icon="@android:drawable/ic_dialog_info"
+        android:title="Logout"/>
+     <item
+        android:id="@+id/about"
+         android:icon="@android:drawable/ic_dialog_info"
+        android:title="About"/>
+
+</menu>

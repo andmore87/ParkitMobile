@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="@drawable/background_wh"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    
+   <TextView
+         android:id="@+id/alertdialTxtNumLocal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical|left"
+         android:text="Local: 1-01"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:layout_marginTop="5dp"
+         android:textColor="@color/black"
+         android:textSize="23sp"
+           />
+    
+     <TextView
+         android:id="@+id/alertdialTxtCategory"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/alertdialTxtNumLocal"
+         android:gravity="center_vertical|left"	
+         android:text="Categoria: Tienda Deportiva"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:textColor="@color/black"
+         android:textSize="22sp"
+          />
+     
+      <TextView
+         android:id="@+id/alertdialTxtPhone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/alertdialTxtCategory"
+         android:gravity="center_vertical|left"
+         android:text="Tel: 6048478"
+         android:autoLink="phone"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:textColor="@color/black"
+         android:textSize="23sp"
+           />
+      
+       <TextView
+        android:id="@+id/alertdialTxtUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alertdialTxtPhone"
+        android:gravity="center"
+        android:text="http://www.adidas.co"
+        android:autoLink="web"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:textSize="23sp"
+         />
+   
+     <TextView
+         android:id="@+id/alertdialTxtDesc"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/alertdialTxtUrl"
+         android:layout_centerInParent="true"
+         android:layout_marginTop="6dp"
+         android:gravity="center_vertical|left"
+         android:text="Descubre la gran variedad de productos que la tienda oficial de adidas tiene para ti."
+         android:textAppearance="?android:textAppearanceMedium"
+         android:textColor="@color/red"
+         android:textSize="23sp"
+          />
+		
+      <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/alertdialTxtDesc"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer" />
+   
+ 
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/gridNodo"
+        android:layout_width="195dp"
+        android:layout_height="230dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:smoothScrollbar="true"
+        android:verticalSpacing="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutNodoTittleLegend"
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borderlayout_wh" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/title_sectionContent_legendinfo"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageLegendNodoAvail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/freeplace" />
+
+        <TextView
+            android:id="@+id/txtLabelNodoAvail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:text="Disponibles"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageLegendNodoNotAvail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/emptyplace" />
+
+        <TextView
+            android:id="@+id/txtLabelNodoNotAvail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"
+            android:text="Sin Plazas"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageLegendNodoDisabled"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/disabled" />
+
+        <TextView
+            android:id="@+id/txtLabelNodoDisabled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"
+            android:text="Discapacitados"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/drop_shadow" >
+        </View>
+
+        <TextView
+            android:id="@+id/txtInfoReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="Para reservar, seleccione el nodo con plazas disponibles"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff6e7f81"
+            android:textSize="15dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="35.0dp"
+        android:layout_height="35.0dp"
+        android:layout_below="@+id/gridNodo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundstylebutton"
+        android:gravity="center"
+        android:src="@drawable/updatebig" />
+
+    <RelativeLayout
+        android:id="@+id/layoutNodoReser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="10dp" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="7dip"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/drop_shadow" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/layoutInfoLocal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/txtInfoLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtLabel"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/title_sectionContent_localinfotitle"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff6e7f81"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+
+            <GridView
+                android:id="@+id/gridInfoLocal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtInfoLocal"
+                android:layout_marginTop="4dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:numColumns="4"
+                android:scrollbars="horizontal"
+                android:stretchMode="columnWidth" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

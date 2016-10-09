@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="@drawable/background_wh"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    
+    <AnalogClock
+        android:id="@+id/analogClockAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:scaleType="fitXY" />
+    
+     <TextView
+         android:id="@+id/alertdialTxtDate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/analogClockAlert"
+         android:layout_centerInParent="true"
+         android:gravity="center"
+         android:text="Lunes 27 Mayo de 2016"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:textColor="@color/black"
+         android:textSize="15sp"
+         android:textStyle="bold" />
+   
+     <TextView
+         android:id="@+id/alertdialTxtState"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/alertdialTxtDate"
+         android:layout_centerInParent="true"
+         android:layout_marginTop="15dp"
+         android:gravity="center"
+         android:text="ABIERTO"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:textColor="@color/red"
+         android:textSize="25sp"
+         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alertdialTxtSched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alertdialTxtState"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Lun a Sab 8:30 am - Dom - fest"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:textSize="23sp" />
+ s
+
+</RelativeLayout>

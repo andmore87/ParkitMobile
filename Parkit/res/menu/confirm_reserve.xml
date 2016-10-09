@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andmore.parkitmobile.activity.ConfirmReserveActivity" >
+
+    <item
+        android:id="@+id/menuconfirm_listparking"
+        android:icon="@drawable/icn_info"
+        android:showAsAction="always"
+        android:title="Ver plazas disponibles"/>
+    <item
+        android:id="@+id/menuconfirm_logout"
+        android:icon="@drawable/icn_logout"
+        android:showAsAction="ifRoom"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/menuconfirm_about"
+        android:icon="@drawable/icn_info"
+        android:showAsAction="ifRoom"
+        android:title="About"/>
+
+</menu>

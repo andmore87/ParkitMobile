@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="top|center"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="7dip"
+        android:background="@drawable/drop_shadow" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165.0dp"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_logoparking"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             
+            android:layout_marginTop="1dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="openBrowser"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/losmolinos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlayout_socialnetwk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/img_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14.0dip"
+            android:background="@drawable/stylebutton"
+            android:src="@drawable/website" />
+
+        <ImageButton
+            android:id="@+id/img_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14.0dip"
+            android:background="@drawable/stylebutton"
+            android:src="@drawable/telephone" />
+
+        <ImageButton
+            android:id="@+id/img_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14.0dip"
+            android:background="@drawable/stylebutton"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:id="@+id/img_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14.0dip"
+            android:background="@drawable/stylebutton"
+            android:src="@drawable/twitter" />
+
+        <ImageButton
+            android:id="@+id/img_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14.0dip"
+            android:background="@drawable/stylebutton"
+            android:src="@drawable/facebook" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.0dip"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lnlayout_mainprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="18.0dip"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lnlayout_price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_currency"
+                    android:text="40"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/txt_price_cent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txt_price"
+                    android:layout_toRightOf="@+id/txt_price"
+                    android:layout_marginTop="5.0dip"
+                    android:text=",99"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_pricetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_currency"
+                    android:text="@string/underlinedPriceTime"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ff6e7f81"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RatingBar
+                android:id="@+id/rankingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3.5"
+                android:stepSize="1.0" />
+
+            <TextView
+                android:id="@+id/txt_parkingname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rankingBar"
+                android:fontFamily="sans-serif-light"
+                android:text="Los Molinos"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_parkingaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left|top"
+                android:lines="2"
+                android:text="Calle 30A 82 A-26 Medellín, Colombia"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ff000000"
+                android:textSize="18sp" 
+                android:layout_below="@+id/txt_parkingname"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="7dip"
+        android:background="@drawable/drop_shadow" >
+    </View>
+
+    <LinearLayout
+        android:id="@id/lnlayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="2.0dip"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="14.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@id/img_avail"
+                android:layout_width="80.0dp"
+                android:layout_height="80.0dp"
+                android:background="@drawable/roundstylebutton"
+                android:gravity="center"
+                android:src="@drawable/icon_mapsbig" />
+
+            <TextView
+                android:id="@+id/txt_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Plazas"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff6e7f81"
+                android:textStyle="bold|italic"
+                android:layout_below="@+id/img_avail" 
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="14.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@id/img_sched"
+                android:layout_width="80.0dp"
+                android:layout_height="80.0dp"
+                android:background="@drawable/roundstylebutton"
+                android:gravity="center"
+                android:src="@drawable/icon_schedulerbig" />
+
+            <TextView
+                android:id="@+id/txt_sched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Horario"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff6e7f81"
+                android:textStyle="bold|italic" 
+                android:layout_below="@+id/img_sched"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="14.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@id/img_maps"
+                android:layout_width="80.0dp"
+                android:layout_height="80.0dp"
+                android:background="@drawable/roundstylebutton"
+                android:gravity="center"
+                android:src="@drawable/icon_availablebig" />
+
+            <TextView
+                android:id="@+id/txt_mapss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="como llegar"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff6e7f81"
+                android:textStyle="bold|italic"
+                android:layout_below="@+id/img_maps"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

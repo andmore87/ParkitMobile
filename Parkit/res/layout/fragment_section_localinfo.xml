@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp" > 
+   
+
+    <ImageView
+        android:id="@+id/imageLocalInfo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="Disponible"
+        android:layout_gravity="center"
+        android:src="@drawable/localadidas" />
+
+    <TextView
+        android:id="@+id/txtLocalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Local 1-108 ADIDAS"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/background_material_dark"
+        android:textSize="12sp" />
+    
+</LinearLayout>
